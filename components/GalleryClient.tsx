@@ -160,14 +160,14 @@ export default function GalleryClient() {
       {/* Hero */}
       <section className="relative overflow-hidden bg-[radial-gradient(circle_at_top,_rgba(212,175,55,0.08),_transparent_30%),_linear-gradient(180deg,_#FAF9F6_0%,_#F2EFE8_100%)] px-5 py-16 sm:px-6 sm:py-24 md:px-12">
         <div className="relative mx-auto max-w-6xl space-y-5 text-center sm:space-y-6">
-          <span className="text-sm uppercase tracking-[0.35em] text-[#D4AF37]">Gallery</span>
+          <span className="text-sm uppercase tracking-[0.35em] text-[#755A0E]">Gallery</span>
           <h1 className="text-3xl font-semibold leading-tight text-[#1A1A18] sm:text-5xl">
             See Our Properties Come to Life
           </h1>
           <p className="mx-auto max-w-2xl text-lg leading-8 text-[#6B6860]">
             Explore video walkthroughs of our premium residential developments across Bangalore — crafted by Ariston Developers.
           </p>
-          <p className="text-sm text-[#9B9890]">Tap any video to watch full screen</p>
+          <p className="text-sm text-[#625E56]">Tap any video to watch full screen</p>
         </div>
       </section>
 

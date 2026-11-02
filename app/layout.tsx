@@ -8,7 +8,10 @@ import JsonLd from '@/components/JsonLd';
 const inter = Inter({
   subsets: ['latin'],
   variable: '--font-inter',
-  display: 'swap',
+  // 'optional' avoids a late re-paint of all body text when Inter arrives on
+  // slow mobile connections (that swap was setting the page's LCP). next/font's
+  // metric-matched fallback keeps the first-visit look nearly identical.
+  display: 'optional',
 });
 
 const playfair = Playfair_Display({

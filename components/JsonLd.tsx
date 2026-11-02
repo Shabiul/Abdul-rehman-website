@@ -10,7 +10,7 @@ export default function JsonLd() {
           'Premium property developer in Bangalore specialising in luxury residential buying & selling, construction, land development and joint ventures across South and East Bangalore.',
         url: 'https://www.aristondevelopers.com',
         telephone: ['+91-99457-26707', '+91-80-41711912'],
-        email: 'Md@aristondevelopers.com',
+        email: 'md@aristondevelopers.com',
         foundingDate: '2020',
         slogan: 'We Build Your Dream Home',
         priceRange: '₹₹₹₹',
@@ -126,14 +126,6 @@ export default function JsonLd() {
         name: 'Ariston Developers',
         description: 'Premium property developer in Bangalore for luxury real estate, construction and land development.',
         publisher: { '@id': 'https://www.aristondevelopers.com/#business' },
-        potentialAction: {
-          '@type': 'SearchAction',
-          target: {
-            '@type': 'EntryPoint',
-            urlTemplate: 'https://www.aristondevelopers.com/#properties?q={search_term_string}',
-          },
-          'query-input': 'required name=search_term_string',
-        },
         inLanguage: 'en-IN',
       },
       {
@@ -152,7 +144,7 @@ export default function JsonLd() {
             name: 'How do I contact Ariston Developers for a property consultation?',
             acceptedAnswer: {
               '@type': 'Answer',
-              text: 'Contact Ariston Developers by calling +91 99457 26707, emailing Md@aristondevelopers.com, or visiting #1716/135, East End A Main Road, Jayanagar 9th Block, Bangalore 560069. Open Monday–Saturday, 9:00 am – 7:00 pm.',
+              text: 'Contact Ariston Developers by calling +91 99457 26707, emailing md@aristondevelopers.com, or visiting #1716/135, East End A Main Road, Jayanagar 9th Block, Bangalore 560069. Open Monday–Saturday, 9:00 am – 7:00 pm.',
             },
           },
           {

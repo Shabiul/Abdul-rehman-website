@@ -46,7 +46,7 @@ export default function Navbar() {
           />
           <span className="hidden flex-col leading-tight sm:flex">
             <span className="text-lg font-semibold text-[#1A1A18]">Ariston Developers</span>
-            <span className="text-[10px] uppercase tracking-[0.22em] text-[#D4AF37]">We Build Your Dream Home</span>
+            <span className="text-[10px] uppercase tracking-[0.22em] text-[#755A0E]">We Build Your Dream Home</span>
           </span>
         </Link>
 

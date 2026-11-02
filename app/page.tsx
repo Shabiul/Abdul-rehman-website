@@ -28,18 +28,18 @@ export const metadata: Metadata = {
     'premium housing Bangalore',
     'property for sale Bangalore',
     'new projects Bangalore',
-    'Bangalore real estate 2025',
+    'Bangalore real estate 2026',
     'South Bangalore property developer',
   ],
   openGraph: {
     title: 'Ariston Developers | Luxury Properties in Bangalore',
     description:
       "Bangalore's premier luxury property developer — buying, selling, construction, land development & joint ventures across Jayanagar, Koramangala, Whitefield & beyond.",
-    url: 'https://www.aristondevelopers.com',
+    url: 'https://www.aristondevelopers.com/',
     siteName: 'Ariston Developers',
     images: [
       {
-        url: '/property-9.jpeg',
+        url: '/og/home.jpg',
         width: 1200,
         height: 630,
         alt: 'Ariston Developers — Luxury Property Bangalore',
@@ -53,10 +53,10 @@ export const metadata: Metadata = {
     title: 'Ariston Developers | Luxury Properties in Bangalore',
     description:
       'Buy, sell & invest in premium Bangalore properties with Ariston Developers — 8+ years, 20-25 properties, ₹75 Cr+ placed.',
-    images: ['/property-9.jpeg'],
+    images: ['/og/home.jpg'],
   },
   alternates: {
-    canonical: 'https://www.aristondevelopers.com',
+    canonical: 'https://www.aristondevelopers.com/',
   },
 };
 

@@ -95,3 +95,16 @@ html, body { min-height: 100%; }
     filter: drop-shadow(0 0 16px rgba(212, 175, 55, 0.55)) drop-shadow(0 0 32px rgba(212, 175, 55, 0.3));
   }
 }
+
+/* Hero text slides in without starting invisible, so it paints with the HTML
+   instead of waiting for JavaScript (keeps Largest Contentful Paint fast). */
+@keyframes hero-rise {
+  from { transform: translateY(16px); }
+  to { transform: none; }
+}
+.hero-rise {
+  animation: hero-rise 0.8s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero-rise { animation: none; }
+}

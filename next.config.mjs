@@ -5,6 +5,12 @@ const nextConfig = {
   // no need for a static export.
   trailingSlash: true,
 
+  // Inline the (small) Tailwind stylesheet into the HTML so it doesn't block
+  // first paint with an extra request.
+  experimental: {
+    inlineCss: true,
+  },
+
   images: {
     // Keep optimized variants in Vercel's cache for a year. Image filenames
     // are stable, so there is nothing to invalidate.

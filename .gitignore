@@ -25,3 +25,4 @@ design-source/
 
 # Unprocessed source media dropped into public/
 public/WhatsApp*.mp4
+*.tsbuildinfo

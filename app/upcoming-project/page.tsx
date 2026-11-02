@@ -9,11 +9,11 @@ export const metadata: Metadata = {
     title: 'Ariston Classic | Ariston Developers',
     description:
       'Luxury 4BHK residences launching June 2027 in Jayanagar, Bengaluru — a room-by-room walkthrough of the interior design for our next residence.',
-    url: 'https://www.aristondevelopers.com/upcoming-project',
+    url: 'https://www.aristondevelopers.com/upcoming-project/',
     siteName: 'Ariston Developers',
     images: [
       {
-        url: '/renders/master-1.jpeg',
+        url: '/og/upcoming-project.jpg',
         width: 1200,
         height: 630,
         alt: 'Ariston Developers — Upcoming Project Interior Render',
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     type: 'website',
   },
   alternates: {
-    canonical: 'https://www.aristondevelopers.com/upcoming-project',
+    canonical: 'https://www.aristondevelopers.com/upcoming-project/',
   },
 };
 

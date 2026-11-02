@@ -8,14 +8,14 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Gallery | Ariston Developers',
     description: 'Video walkthroughs of our premium residential developments across Bangalore.',
-    url: 'https://www.aristondevelopers.com/gallery',
+    url: 'https://www.aristondevelopers.com/gallery/',
     siteName: 'Ariston Developers',
-    images: [{ url: '/property-3.jpeg', width: 1200, height: 630, alt: 'Ariston Developers Gallery' }],
+    images: [{ url: '/og/gallery.jpg', width: 1200, height: 630, alt: 'Ariston Developers Gallery' }],
     locale: 'en_IN',
     type: 'website',
   },
   alternates: {
-    canonical: 'https://www.aristondevelopers.com/gallery',
+    canonical: 'https://www.aristondevelopers.com/gallery/',
   },
 };
 

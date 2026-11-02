@@ -21,11 +21,11 @@ export const metadata: Metadata = {
     title: 'About Ariston Developers | Premier Property Developer Bangalore',
     description:
       'Founded by Abdul Rehaman in 2020 — 8+ years building luxury residential properties across Bangalore with transparency, integrity and design excellence.',
-    url: 'https://www.aristondevelopers.com/about',
+    url: 'https://www.aristondevelopers.com/about/',
     siteName: 'Ariston Developers',
     images: [
       {
-        url: '/property-4.jpeg',
+        url: '/og/about.jpg',
         width: 1200,
         height: 630,
         alt: 'Ariston Developers — About Us',
@@ -39,10 +39,10 @@ export const metadata: Metadata = {
     title: 'About Ariston Developers | Premier Property Developer Bangalore',
     description:
       '8+ years of luxury real estate excellence in Bangalore. 20-25 properties. ₹75 Cr+ in investment value.',
-    images: ['/property-4.jpeg'],
+    images: ['/og/about.jpg'],
   },
   alternates: {
-    canonical: 'https://www.aristondevelopers.com/about',
+    canonical: 'https://www.aristondevelopers.com/about/',
   },
 };
 

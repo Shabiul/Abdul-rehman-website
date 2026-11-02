@@ -45,7 +45,7 @@ export default function AboutClient() {
           aria-hidden="true"
         />
         <div className="relative mx-auto max-w-6xl space-y-5 text-center sm:space-y-6">
-          <span className="text-sm uppercase tracking-[0.35em] text-[#D4AF37]">About Us</span>
+          <span className="text-sm uppercase tracking-[0.35em] text-[#755A0E]">About Us</span>
           <h1 className="text-3xl font-semibold leading-tight text-[#1A1A18] sm:text-5xl">Building Trust Through Exceptional Real Estate Experiences</h1>
           <p className="mx-auto max-w-2xl text-lg leading-8 text-[#6B6860]">
             Ariston Developers delivers premium property journeys founded on discretion, deep market knowledge and luxury lifestyle curation across Bangalore.
@@ -59,18 +59,18 @@ export default function AboutClient() {
       <section className="border-t border-black/[0.08] bg-[#FAF9F6] px-5 py-12 sm:px-6 md:px-12 md:py-20">
         <div className="mx-auto grid max-w-7xl gap-16 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
           <div className="space-y-6">
-            <span className="text-sm uppercase tracking-[0.35em] text-[#D4AF37]">Founder Story</span>
+            <span className="text-sm uppercase tracking-[0.35em] text-[#755A0E]">Founder Story</span>
             <h2 className="text-3xl font-semibold tracking-tight text-[#1A1A18] sm:text-4xl md:text-5xl">Crafting a legacy of confidence for luxury property seekers.</h2>
             <p className="max-w-3xl text-lg leading-8 text-[#6B6860]">
               Founded in 2020 by Abdul Rehaman, Ariston Developers was built on a simple belief — every family deserves honest guidance and a home they are proud of.
             </p>
             <div className="grid gap-4 sm:grid-cols-2">
               <div className="glass-card p-6">
-                <p className="text-sm uppercase tracking-[0.3em] text-[#9B9890]">Experience</p>
+                <p className="text-sm uppercase tracking-[0.3em] text-[#625E56]">Experience</p>
                 <p className="mt-3 text-[#4A4A40]">8+ years in residential property development, construction, land development and joint ventures across South Bangalore.</p>
               </div>
               <div className="glass-card p-6">
-                <p className="text-sm uppercase tracking-[0.3em] text-[#9B9890]">Achievements</p>
+                <p className="text-sm uppercase tracking-[0.3em] text-[#625E56]">Achievements</p>
                 <p className="mt-3 text-[#4A4A40]">300+ families served, projects delivered in Jayanagar, BTM Layout and Koramangala — every project completed on time and on promise.</p>
               </div>
             </div>
@@ -82,11 +82,11 @@ export default function AboutClient() {
                 <div className="text-[#4A4A40]">
                   <div className="mb-4 inline-flex rounded-full border border-black/10 bg-black/5 px-4 py-2 text-xs uppercase tracking-[0.35em] text-[#6B6860]">Founder</div>
                   <p className="text-xl font-semibold text-[#1A1A18]">Abdul Rehaman</p>
-                  <p className="mt-1 text-sm text-[#D4AF37]">+91 99457 26707</p>
+                  <p className="mt-1 text-sm text-[#755A0E]">+91 99457 26707</p>
                   <p className="mt-3 text-[#6B6860]">Property developer, land strategist and founder of Ariston Developers, Bangalore.</p>
                 </div>
                 <div className="grid gap-4 rounded-[28px] border border-black/[0.08] bg-[#FAF9F6] p-6">
-                  <p className="text-sm uppercase tracking-[0.3em] text-[#9B9890]">Vision Statement</p>
+                  <p className="text-sm uppercase tracking-[0.3em] text-[#625E56]">Vision Statement</p>
                   <p className="text-[#4A4A40]">To set the benchmark for premium living experiences through curated spaces, intelligent investment and celebrated service.</p>
                 </div>
               </div>
@@ -98,7 +98,7 @@ export default function AboutClient() {
       <section id="journey" className="border-t border-black/[0.08] bg-[#F2EFE8] px-5 py-12 sm:px-6 md:px-12 md:py-20">
         <div className="mx-auto max-w-7xl">
           <div className="mb-12 max-w-3xl">
-            <span className="text-sm uppercase tracking-[0.35em] text-[#D4AF37]">Company Journey</span>
+            <span className="text-sm uppercase tracking-[0.35em] text-[#755A0E]">Company Journey</span>
             <h2 className="mt-4 text-3xl font-semibold tracking-tight text-[#1A1A18] sm:text-4xl md:text-5xl">A dynamic growth story driven by curated excellence.</h2>
           </div>
           <div className="relative overflow-hidden rounded-[32px] border border-black/[0.08] bg-white p-8 shadow-sm">
@@ -113,7 +113,7 @@ export default function AboutClient() {
                   transition={{ duration: 0.5, delay: index * 0.1 }}
                   className="relative flex flex-col gap-4 rounded-3xl border border-black/[0.08] bg-[#FAF9F6] p-6 sm:flex-row sm:items-center"
                 >
-                  <div className="flex h-20 w-20 items-center justify-center rounded-full bg-[#D4AF37]/15 text-xl font-semibold text-[#D4AF37]">
+                  <div className="flex h-20 w-20 items-center justify-center rounded-full bg-[#D4AF37]/15 text-xl font-semibold text-[#755A0E]">
                     {item.year}
                   </div>
                   <div className="sm:flex-1">
@@ -131,7 +131,7 @@ export default function AboutClient() {
         <div className="mx-auto max-w-7xl space-y-12">
           <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
             <div className="space-y-4">
-              <span className="text-sm uppercase tracking-[0.35em] text-[#D4AF37]">Team</span>
+              <span className="text-sm uppercase tracking-[0.35em] text-[#755A0E]">Team</span>
               <h2 className="text-3xl font-semibold tracking-tight text-[#1A1A18] sm:text-4xl md:text-5xl">A modern team built for Ariston Developers and investment advisory.</h2>
             </div>
             <p className="max-w-2xl text-lg leading-8 text-[#6B6860]">
@@ -151,8 +151,8 @@ export default function AboutClient() {
                   </div>
                 </div>
                 <h3 className="text-xl font-semibold text-[#1A1A18]">{member.name}</h3>
-                <p className="mt-2 text-sm text-[#9B9890]">{member.role}</p>
-                <p className="mt-4 text-sm text-[#D4AF37]">{member.social}</p>
+                <p className="mt-2 text-sm text-[#625E56]">{member.role}</p>
+                <p className="mt-4 text-sm text-[#755A0E]">{member.social}</p>
               </motion.div>
             ))}
           </div>
@@ -163,7 +163,7 @@ export default function AboutClient() {
         <div className="mx-auto max-w-7xl space-y-12">
           <div className="grid gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
             <div className="space-y-4">
-              <span className="text-sm uppercase tracking-[0.35em] text-[#D4AF37]">Core Values</span>
+              <span className="text-sm uppercase tracking-[0.35em] text-[#755A0E]">Core Values</span>
               <h2 className="text-3xl font-semibold tracking-tight text-[#1A1A18] sm:text-4xl md:text-5xl">Principles that shape every premium client relationship.</h2>
             </div>
             <p className="max-w-2xl text-lg leading-8 text-[#6B6860]">
@@ -188,7 +188,7 @@ export default function AboutClient() {
       <section className="border-t border-black/[0.08] bg-[#F2EFE8] px-5 py-12 sm:px-6 md:px-12 md:py-20">
         <div className="mx-auto max-w-7xl">
           <div className="mb-12 max-w-3xl">
-            <span className="text-sm uppercase tracking-[0.35em] text-[#D4AF37]">Our Projects</span>
+            <span className="text-sm uppercase tracking-[0.35em] text-[#755A0E]">Our Projects</span>
             <h2 className="mt-4 text-3xl font-semibold tracking-tight text-[#1A1A18] sm:text-4xl md:text-5xl">A portfolio of landmark properties across Bangalore.</h2>
           </div>
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
@@ -213,7 +213,7 @@ export default function AboutClient() {
                 </div>
                 <div className="p-4">
                   <p className="font-semibold text-[#1A1A18]">{p.title}</p>
-                  <p className="mt-1 text-sm text-[#9B9890]">{p.loc}, Bangalore</p>
+                  <p className="mt-1 text-sm text-[#625E56]">{p.loc}, Bangalore</p>
                 </div>
               </div>
             ))}

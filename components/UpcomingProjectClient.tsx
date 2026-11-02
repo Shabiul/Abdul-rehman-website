@@ -45,14 +45,14 @@ function RenderCard({ render, index }: { render: Render; index: number }) {
 
       <div className="space-y-5">
         <div className="flex items-center gap-3">
-          <span className="text-4xl font-semibold text-[#D4AF37]/25">
+          <span className="text-4xl font-semibold text-[#755A0E]/25">
             {String(index + 1).padStart(2, '0')}
           </span>
           <div className="h-px flex-1 bg-gradient-to-r from-[#D4AF37]/40 to-transparent" />
         </div>
 
         <div className="space-y-2">
-          <h4 className="text-2xl font-semibold text-[#1A1A18] sm:text-3xl">{render.title}</h4>
+          <h3 className="text-2xl font-semibold text-[#1A1A18] sm:text-3xl">{render.title}</h3>
           <p className="text-lg leading-8 text-[#6B6860]">{render.caption}</p>
         </div>
 
@@ -83,37 +83,28 @@ export default function UpcomingProjectClient() {
       {/* Hero */}
       <section className="relative overflow-hidden bg-[radial-gradient(circle_at_top,_rgba(212,175,55,0.08),_transparent_30%),_linear-gradient(180deg,_#FAF9F6_0%,_#F2EFE8_100%)] px-5 pb-16 pt-28 sm:px-6 sm:pb-24 sm:pt-36 md:px-12">
         <div className="mx-auto max-w-3xl space-y-6 text-center">
-          <motion.span
-            initial={{ opacity: 0, y: 16 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="block text-sm uppercase tracking-[0.35em] text-[#D4AF37]"
+          <span
+            className="hero-rise block text-sm uppercase tracking-[0.35em] text-[#755A0E]"
           >
             Upcoming Project — Launching June 2027
-          </motion.span>
-          <motion.h1
-            initial={{ opacity: 0, y: 24 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.1 }}
-            className="text-3xl font-semibold leading-tight text-[#1A1A18] sm:text-5xl"
+          </span>
+          <h1
+            className="hero-rise text-3xl font-semibold leading-tight text-[#1A1A18] sm:text-5xl"
+            style={{ animationDelay: '0.1s' }}
           >
             Ariston Classic — Jayanagar, Bengaluru
-          </motion.h1>
-          <motion.p
-            initial={{ opacity: 0, y: 24 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.2 }}
-            className="mx-auto max-w-2xl text-lg leading-8 text-[#6B6860]"
+          </h1>
+          <p
+            className="hero-rise mx-auto max-w-2xl text-lg leading-8 text-[#6B6860]"
+            style={{ animationDelay: '0.2s' }}
           >
             Luxury 4BHK residences launching June 2027. A room-by-room walkthrough of the interior design
             for our next residence, each with its own material story, captured across {totalRenders} detailed renders.
-          </motion.p>
+          </p>
 
-          <motion.div
-            initial={{ opacity: 0, y: 24 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.3 }}
-            className="flex flex-wrap items-center justify-center gap-3 pt-2"
+          <div
+            className="hero-rise flex flex-wrap items-center justify-center gap-3 pt-2"
+            style={{ animationDelay: '0.3s' }}
           >
             {rooms.map((room) => (
               <a
@@ -124,7 +115,7 @@ export default function UpcomingProjectClient() {
                 {room.name}
               </a>
             ))}
-          </motion.div>
+          </div>
         </div>
       </section>
 
@@ -145,7 +136,7 @@ export default function UpcomingProjectClient() {
               transition={{ duration: 0.6 }}
               className="mb-12 max-w-3xl space-y-4 md:mb-16"
             >
-              <span className="text-sm uppercase tracking-[0.35em] text-[#D4AF37]">
+              <span className="text-sm uppercase tracking-[0.35em] text-[#755A0E]">
                 {String(roomIndex + 1).padStart(2, '0')} — {room.renders.length} Renders
               </span>
               <h2 className="text-3xl font-semibold tracking-tight text-[#1A1A18] sm:text-4xl md:text-5xl">
@@ -178,7 +169,7 @@ export default function UpcomingProjectClient() {
       {/* CTA */}
       <section className="bg-[#FAF9F6] px-5 py-16 sm:px-6 md:px-12 md:py-24">
         <div className="mx-auto flex max-w-4xl flex-col items-center gap-6 rounded-[32px] border border-black/[0.08] bg-white px-6 py-12 text-center shadow-[0_60px_140px_-90px_rgba(212,175,55,0.35)] sm:px-10 sm:py-16">
-          <span className="text-sm uppercase tracking-[0.35em] text-[#D4AF37]">Register Interest</span>
+          <span className="text-sm uppercase tracking-[0.35em] text-[#755A0E]">Register Interest</span>
           <h2 className="text-3xl font-semibold leading-tight text-[#1A1A18] sm:text-4xl">
             Want the full details on this project?
           </h2>

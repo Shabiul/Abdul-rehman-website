@@ -21,21 +21,35 @@ export default function ThreeScene() {
     const ctx = canvas.getContext('2d');
     if (!ctx) return;
 
-    let animId: number;
+    let animId = 0;
+    let running = false;
     const particles: Particle[] = [];
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
+    // Draw in CSS pixels but back the canvas with device pixels so lines stay crisp.
+    const dpr = Math.min(window.devicePixelRatio || 1, 2);
+    let width = canvas.offsetWidth;
+    let height = canvas.offsetHeight;
     const resize = () => {
-      canvas.width = canvas.offsetWidth;
-      canvas.height = canvas.offsetHeight;
+      width = canvas.offsetWidth;
+      height = canvas.offsetHeight;
+      canvas.width = width * dpr;
+      canvas.height = height * dpr;
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
     };
 
     resize();
-    window.addEventListener('resize', resize);
+    // Runs after setup; re-checks whether to animate once the canvas gains a size.
+    const resizeObserver = new ResizeObserver(() => {
+      resize();
+      sync();
+    });
+    resizeObserver.observe(canvas);
 
     for (let i = 0; i < 72; i++) {
       particles.push({
-        x: Math.random() * canvas.width,
-        y: Math.random() * canvas.height,
+        x: Math.random() * width,
+        y: Math.random() * height,
         vx: (Math.random() - 0.5) * 0.35,
         vy: (Math.random() - 0.5) * 0.35,
         radius: Math.random() * 1.6 + 0.4,
@@ -65,7 +79,7 @@ export default function ThreeScene() {
     let angle = 0;
 
     const draw = () => {
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      ctx.clearRect(0, 0, width, height);
 
       // Particles
       for (const p of particles) {
@@ -76,17 +90,17 @@ export default function ThreeScene() {
         ctx.fill();
         p.x += p.vx;
         p.y += p.vy;
-        if (p.x < 0) p.x = canvas.width;
-        if (p.x > canvas.width) p.x = 0;
-        if (p.y < 0) p.y = canvas.height;
-        if (p.y > canvas.height) p.y = 0;
+        if (p.x < 0) p.x = width;
+        if (p.x > width) p.x = 0;
+        if (p.y < 0) p.y = height;
+        if (p.y > height) p.y = 0;
       }
       ctx.globalAlpha = 1;
 
       // Wireframe icosahedron
-      const cx = canvas.width * 0.72;
-      const cy = canvas.height * 0.52;
-      const scale = Math.min(canvas.width, canvas.height) * 0.28;
+      const cx = width * 0.72;
+      const cy = height * 0.52;
+      const scale = Math.min(width, height) * 0.28;
       angle += 0.006;
       const cosA = Math.cos(angle);
       const sinA = Math.sin(angle);
@@ -119,14 +133,38 @@ export default function ThreeScene() {
       }
       ctx.globalAlpha = 1;
 
-      animId = requestAnimationFrame(draw);
+      if (running) animId = requestAnimationFrame(draw);
     };
 
-    draw();
+    const start = () => {
+      if (running || reduceMotion) return;
+      running = true;
+      animId = requestAnimationFrame(draw);
+    };
+    const stop = () => {
+      running = false;
+      cancelAnimationFrame(animId);
+    };
+
+    // Only animate while the canvas is actually visible — it is display:none on
+    // phones and scrolls out of view on desktop, and a hidden rAF loop burns battery.
+    let inView = false;
+    const sync = () => (inView && !document.hidden && width > 0 ? start() : stop());
+    const io = new IntersectionObserver(([entry]) => {
+      inView = entry.isIntersecting;
+      sync();
+    });
+    io.observe(canvas);
+    document.addEventListener('visibilitychange', sync);
+
+    // Reduced motion: one static frame instead of an animation.
+    if (reduceMotion && width > 0) draw();
 
     return () => {
-      cancelAnimationFrame(animId);
-      window.removeEventListener('resize', resize);
+      stop();
+      io.disconnect();
+      resizeObserver.disconnect();
+      document.removeEventListener('visibilitychange', sync);
     };
   }, []);
 

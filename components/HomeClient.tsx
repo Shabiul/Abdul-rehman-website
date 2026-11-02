@@ -147,22 +147,16 @@ export default function HomeClient() {
             <span className="inline-flex rounded-full border border-black/10 bg-black/5 px-4 py-2 text-xs uppercase tracking-[0.35em] text-[#6B6860] backdrop-blur-xl">
               Ariston Developers
             </span>
-            <motion.h1
-              initial={{ opacity: 0, y: 24 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.9 }}
-              className="text-4xl font-semibold leading-[1.12] tracking-tight text-[#1A1A18] sm:text-5xl lg:text-7xl"
+            <h1
+              className="hero-rise text-4xl font-semibold leading-[1.12] tracking-tight text-[#1A1A18] sm:text-5xl lg:text-7xl"
             >
               Luxury Real Estate<br className="hidden sm:block" /> in Bangalore
-            </motion.h1>
-            <motion.p
-              initial={{ opacity: 0, y: 24 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1.1 }}
-              className="max-w-2xl text-base leading-7 text-[#6B6860] sm:text-lg sm:leading-8"
+            </h1>
+            <p
+              className="hero-rise max-w-2xl text-base leading-7 text-[#6B6860] sm:text-lg sm:leading-8"
             >
               Premium property buying, selling, construction and land development across Jayanagar, Koramangala, Whitefield and beyond — by Ariston Developers.
-            </motion.p>
+            </p>
             <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap">
               <Link href="#properties" className="inline-flex justify-center rounded-full bg-[#D4AF37] px-7 py-3.5 text-sm font-semibold text-black transition hover:bg-[#c99b28] sm:py-4">
                 Explore Properties
@@ -175,7 +169,7 @@ export default function HomeClient() {
 
           <div className="relative grid gap-4 rounded-[28px] border border-black/10 bg-white/80 p-4 shadow-[0_40px_120px_-70px_rgba(212,175,55,0.2)] backdrop-blur-sm sm:rounded-[32px] sm:p-6 md:grid-cols-[1fr_0.85fr] md:p-8">
             <div className="space-y-5">
-              <div className="flex flex-wrap gap-2 text-xs uppercase tracking-[0.28em] text-[#9B9890] sm:gap-3 sm:text-sm sm:tracking-[0.3em]">
+              <div className="flex flex-wrap gap-2 text-xs uppercase tracking-[0.28em] text-[#625E56] sm:gap-3 sm:text-sm sm:tracking-[0.3em]">
                 <span className="rounded-full bg-black/5 px-3 py-1.5 sm:px-4 sm:py-2">Buy</span>
                 <span className="rounded-full bg-black/5 px-3 py-1.5 sm:px-4 sm:py-2">Rent</span>
                 <span className="rounded-full bg-black/5 px-3 py-1.5 sm:px-4 sm:py-2">Commercial</span>
@@ -183,10 +177,10 @@ export default function HomeClient() {
                 <span className="rounded-full bg-black/5 px-3 py-1.5 sm:px-4 sm:py-2">Luxury Villas</span>
               </div>
               <div className="space-y-3">
-                <label className="text-xs uppercase tracking-[0.25em] text-[#9B9890] sm:text-sm">Search properties</label>
+                <label className="text-xs uppercase tracking-[0.25em] text-[#625E56] sm:text-sm">Search properties</label>
                 <div className="grid gap-3 sm:grid-cols-3">
-                  <input type="text" placeholder="Location or property type" className="rounded-2xl border border-black/10 bg-white px-4 py-3 text-sm text-[#1A1A18] outline-none placeholder:text-[#ABABAA] focus:border-[#D4AF37] sm:rounded-3xl sm:py-4" />
-                  <input type="text" placeholder="Bedrooms" className="rounded-2xl border border-black/10 bg-white px-4 py-3 text-sm text-[#1A1A18] outline-none placeholder:text-[#ABABAA] focus:border-[#D4AF37] sm:rounded-3xl sm:py-4" />
+                  <input type="text" placeholder="Location or property type" className="rounded-2xl border border-black/10 bg-white px-4 py-3 text-base sm:text-sm text-[#1A1A18] outline-none placeholder:text-[#ABABAA] focus:border-[#D4AF37] sm:rounded-3xl sm:py-4" />
+                  <input type="text" placeholder="Bedrooms" className="rounded-2xl border border-black/10 bg-white px-4 py-3 text-base sm:text-sm text-[#1A1A18] outline-none placeholder:text-[#ABABAA] focus:border-[#D4AF37] sm:rounded-3xl sm:py-4" />
                   <button className="rounded-2xl bg-[#D4AF37] px-6 py-3 text-sm font-semibold text-black transition hover:bg-[#c99b28] sm:rounded-3xl sm:py-4">Search</button>
                 </div>
               </div>
@@ -195,7 +189,7 @@ export default function HomeClient() {
               <ThreeScene />
               <div className="relative z-10 grid gap-4">
                 <div className="rounded-3xl border border-black/10 bg-white p-5 text-[#4A4A40] shadow-sm">
-                  <p className="text-xs uppercase tracking-[0.3em] text-[#9B9890]">Signature Estate Collection</p>
+                  <p className="text-xs uppercase tracking-[0.3em] text-[#625E56]">Signature Estate Collection</p>
                   <p className="mt-3 text-lg font-semibold text-[#1A1A18]">Exclusive properties for high-net-worth families and investors.</p>
                 </div>
                 <div className="grid gap-3 rounded-3xl border border-black/10 bg-[#ECEAE2] p-5 text-[#4A4A40]">
@@ -217,7 +211,7 @@ export default function HomeClient() {
       {/* Upcoming Project */}
       <section className="border-t border-black/[0.08] bg-[radial-gradient(circle_at_top,_rgba(212,175,55,0.08),_transparent_30%),_linear-gradient(180deg,_#FAF9F6_0%,_#F2EFE8_100%)] px-5 py-16 sm:px-6 sm:py-24 md:px-12">
         <div className="mx-auto max-w-3xl space-y-5 text-center sm:space-y-6">
-          <span className="text-sm uppercase tracking-[0.35em] text-[#D4AF37]">Upcoming Project — Launching June 2027</span>
+          <span className="text-sm uppercase tracking-[0.35em] text-[#755A0E]">Upcoming Project — Launching June 2027</span>
           <h2 className="text-3xl font-semibold leading-tight text-[#1A1A18] sm:text-5xl">
             <span className="gold-glow-text">Ariston Classic</span> Is Coming to Bangalore.
           </h2>
@@ -264,7 +258,7 @@ export default function HomeClient() {
         <div className="mx-auto max-w-7xl space-y-12 md:space-y-16">
           <div className="grid gap-10 lg:grid-cols-[1fr_0.95fr] lg:items-center">
             <div className="space-y-6">
-              <span className="text-sm uppercase tracking-[0.35em] text-[#D4AF37]">Our Heritage</span>
+              <span className="text-sm uppercase tracking-[0.35em] text-[#755A0E]">Our Heritage</span>
               <h2 className="text-3xl font-semibold leading-tight text-[#1A1A18] sm:text-4xl md:text-5xl">A premium real estate story crafted by Ariston Developers.</h2>
               <p className="max-w-xl text-lg leading-8 text-[#6B6860]">
                 Since inception, Ariston Developers has redefined luxury property discovery with bespoke planning, market intelligence and a transparent advisory model for premium investors.
@@ -272,11 +266,11 @@ export default function HomeClient() {
             </div>
             <div className="grid gap-4 sm:grid-cols-2">
               <div className="glass-card p-6">
-                <p className="text-sm uppercase tracking-[0.28em] text-[#9B9890]">Mission</p>
+                <p className="text-sm uppercase tracking-[0.28em] text-[#625E56]">Mission</p>
                 <p className="mt-4 text-[#4A4A40]">Curate extraordinary living experiences through exceptional properties and trusted guidance.</p>
               </div>
               <div className="glass-card p-6">
-                <p className="text-sm uppercase tracking-[0.28em] text-[#9B9890]">Vision</p>
+                <p className="text-sm uppercase tracking-[0.28em] text-[#625E56]">Vision</p>
                 <p className="mt-4 text-[#4A4A40]">Lead as Bangalore&apos;s premier property developer with integrity, innovation and discerning service.</p>
               </div>
             </div>
@@ -291,7 +285,7 @@ export default function HomeClient() {
             ].map((item) => (
               <div key={item.label} className="rounded-3xl border border-black/[0.08] bg-[#FAF9F6] p-6 text-center">
                 <p className="text-4xl font-semibold text-[#1A1A18]">{item.value}</p>
-                <p className="mt-3 text-sm uppercase tracking-[0.3em] text-[#9B9890]">{item.label}</p>
+                <p className="mt-3 text-sm uppercase tracking-[0.3em] text-[#625E56]">{item.label}</p>
               </div>
             ))}
           </div>
@@ -302,12 +296,12 @@ export default function HomeClient() {
         <div className="mx-auto max-w-7xl">
           <div className="mb-8 flex flex-wrap items-end justify-between gap-4 md:mb-12 md:gap-6">
             <div className="max-w-3xl">
-              <span className="text-sm uppercase tracking-[0.35em] text-[#D4AF37]">Featured Properties</span>
+              <span className="text-sm uppercase tracking-[0.35em] text-[#755A0E]">Featured Properties</span>
               <h2 className="mt-3 text-3xl font-semibold tracking-tight text-[#1A1A18] sm:text-4xl md:mt-4 md:text-5xl">Discover curated luxury estates with premium amenities.</h2>
             </div>
             {liked.length > 0 && (
               <div className="inline-flex items-center gap-2 rounded-full border border-[#D4AF37]/40 bg-[#D4AF37]/10 px-5 py-3 text-sm font-semibold text-[#1A1A18]">
-                <span className="text-[#D4AF37]">♥</span>
+                <span className="text-[#755A0E]">♥</span>
                 {liked.length} {liked.length === 1 ? 'property' : 'properties'} saved
               </div>
             )}
@@ -355,11 +349,11 @@ export default function HomeClient() {
                 <div className="space-y-4 p-6">
                   <div className="space-y-1">
                     <p className="text-xl font-semibold text-[#1A1A18]">{property.name}</p>
-                    <p className="text-sm text-[#9B9890]">{property.location}</p>
+                    <p className="text-sm text-[#625E56]">{property.location}</p>
                     <span className={`inline-flex items-center gap-1.5 rounded-full border px-3 py-1 text-xs font-bold uppercase tracking-[0.15em] ${
                       property.price === '1 Unit Left'
                         ? 'border-amber-300 bg-amber-50 text-amber-700'
-                        : 'border-red-300 bg-red-50 text-red-600'
+                        : 'border-red-300 bg-red-50 text-red-700'
                     }`}>
                       <span className={`h-1.5 w-1.5 rounded-full ${property.price === '1 Unit Left' ? 'bg-amber-500' : 'bg-red-500'}`} />
                       {property.price}
@@ -388,7 +382,7 @@ export default function HomeClient() {
         <div className="mx-auto max-w-7xl">
           <div className="mb-8 grid gap-5 md:mb-12 md:grid-cols-[0.9fr_1.1fr] md:items-end md:gap-6">
             <div className="space-y-4">
-              <span className="text-sm uppercase tracking-[0.35em] text-[#D4AF37]">Why Choose Us</span>
+              <span className="text-sm uppercase tracking-[0.35em] text-[#755A0E]">Why Choose Us</span>
               <h2 className="text-3xl font-semibold tracking-tight text-[#1A1A18] sm:text-4xl md:text-5xl">Luxury real estate service built around confidence and clarity.</h2>
             </div>
             <p className="max-w-2xl text-lg leading-8 text-[#6B6860]">
@@ -398,7 +392,7 @@ export default function HomeClient() {
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {reasons.map((item) => (
               <div key={item.title} className="glass-card p-8 text-[#4A4A40] transition hover:-translate-y-2 hover:bg-[#F5F3EE]">
-                <div className="mb-4 inline-flex h-14 w-14 items-center justify-center rounded-3xl bg-[#D4AF37]/15 text-[#D4AF37] text-lg font-bold">✓</div>
+                <div className="mb-4 inline-flex h-14 w-14 items-center justify-center rounded-3xl bg-[#D4AF37]/15 text-[#755A0E] text-lg font-bold">✓</div>
                 <h3 className="text-xl font-semibold text-[#1A1A18]">{item.title}</h3>
                 <p className="mt-3 text-sm leading-7 text-[#6B6860]">{item.desc}</p>
               </div>
@@ -410,7 +404,7 @@ export default function HomeClient() {
       <section aria-label="Areas we serve" className="border-t border-black/[0.08] bg-white px-6 py-16 md:px-12">
         <div className="mx-auto max-w-7xl">
           <div className="flex flex-wrap items-center gap-4">
-            <span className="text-xs uppercase tracking-[0.35em] text-[#9B9890] shrink-0">Areas We Serve</span>
+            <span className="text-xs uppercase tracking-[0.35em] text-[#625E56] shrink-0">Areas We Serve</span>
             <div className="flex flex-wrap gap-2">
               {areas.map((area) => (
                 <span
@@ -427,7 +421,7 @@ export default function HomeClient() {
 
       <section className="border-t border-black/[0.08] bg-[#FAF9F6] px-5 py-12 sm:px-6 md:px-12 md:py-20">
         <div className="mx-auto flex max-w-6xl flex-col items-center gap-6 rounded-[28px] border border-black/[0.08] bg-white px-6 py-10 text-center shadow-[0_60px_140px_-90px_rgba(212,175,55,0.35)] sm:rounded-[40px] sm:gap-8 sm:px-8 sm:py-14 md:py-16">
-          <span className="text-sm uppercase tracking-[0.35em] text-[#D4AF37]">Book Your Appointment</span>
+          <span className="text-sm uppercase tracking-[0.35em] text-[#755A0E]">Book Your Appointment</span>
           <h2 className="text-3xl font-semibold leading-tight text-[#1A1A18] sm:text-4xl md:text-5xl">Ready To Invest In Your Dream Property?</h2>
           <p className="max-w-2xl text-lg leading-8 text-[#6B6860]">
             Connect with Ariston Developers for confidential property advice, personalized showings and high-impact investment strategies.
@@ -475,7 +469,7 @@ export default function HomeClient() {
                   className={`absolute left-5 top-5 inline-flex items-center gap-1.5 rounded-full border px-3 py-1 text-xs font-bold uppercase tracking-[0.15em] ${
                     selected.price === '1 Unit Left'
                       ? 'border-amber-300 bg-amber-50 text-amber-700'
-                      : 'border-red-300 bg-red-50 text-red-600'
+                      : 'border-red-300 bg-red-50 text-red-700'
                   }`}
                 >
                   <span className={`h-1.5 w-1.5 rounded-full ${selected.price === '1 Unit Left' ? 'bg-amber-500' : 'bg-red-500'}`} />
@@ -487,18 +481,18 @@ export default function HomeClient() {
               <div className="space-y-5 p-6 sm:p-8">
                 <div>
                   <h3 className="text-2xl font-semibold text-[#1A1A18]">{selected.name}</h3>
-                  <p className="mt-1 text-sm text-[#9B9890]">{selected.location}</p>
+                  <p className="mt-1 text-sm text-[#625E56]">{selected.location}</p>
                 </div>
 
                 {'beds' in selected && (
                   <div className="grid grid-cols-2 gap-3">
                     <div className="rounded-2xl border border-black/[0.08] bg-[#F5F3EE] p-4 text-center">
                       <p className="text-2xl font-semibold text-[#1A1A18]">{selected.beds}</p>
-                      <p className="mt-1 text-xs uppercase tracking-[0.2em] text-[#9B9890]">Bedrooms</p>
+                      <p className="mt-1 text-xs uppercase tracking-[0.2em] text-[#625E56]">Bedrooms</p>
                     </div>
                     <div className="rounded-2xl border border-black/[0.08] bg-[#F5F3EE] p-4 text-center">
                       <p className="text-2xl font-semibold text-[#1A1A18]">{selected.baths}</p>
-                      <p className="mt-1 text-xs uppercase tracking-[0.2em] text-[#9B9890]">Bathrooms</p>
+                      <p className="mt-1 text-xs uppercase tracking-[0.2em] text-[#625E56]">Bathrooms</p>
                     </div>
                   </div>
                 )}

@@ -21,11 +21,11 @@ export const metadata: Metadata = {
     title: 'Contact Ariston Developers | Private Property Consultation Bangalore',
     description:
       'Reach us at +91 99457 26707 or visit our Jayanagar 9th Block office. Private viewings, investment advice and joint venture enquiries welcome.',
-    url: 'https://www.aristondevelopers.com/contact',
+    url: 'https://www.aristondevelopers.com/contact/',
     siteName: 'Ariston Developers',
     images: [
       {
-        url: '/property-3.jpeg',
+        url: '/og/contact.jpg',
         width: 1200,
         height: 630,
         alt: 'Ariston Developers — Contact Us',
@@ -39,10 +39,10 @@ export const metadata: Metadata = {
     title: 'Contact Ariston Developers | Bangalore',
     description:
       'Get in touch for premium property advice, private viewings and joint venture enquiries in Bangalore.',
-    images: ['/property-3.jpeg'],
+    images: ['/og/contact.jpg'],
   },
   alternates: {
-    canonical: 'https://www.aristondevelopers.com/contact',
+    canonical: 'https://www.aristondevelopers.com/contact/',
   },
 };
 

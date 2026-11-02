@@ -28,13 +28,13 @@ export default function Footer() {
             <Image src="/logo-mark.png" alt="Ariston Developers" width={48} height={48} className="object-contain" />
             <div>
               <p className="text-lg font-semibold text-[#1A1A18]">Ariston Developers</p>
-              <p className="text-xs uppercase tracking-[0.2em] text-[#D4AF37]">We Build Your Dream Home</p>
+              <p className="text-xs uppercase tracking-[0.2em] text-[#755A0E]">We Build Your Dream Home</p>
             </div>
           </div>
           <p className="max-w-sm leading-7 text-[#6B6860]">
             End-to-end property development in Bangalore — buying, selling, construction and land development for discerning clients.
           </p>
-          <div className="flex flex-col gap-1.5 text-xs text-[#9B9890]">
+          <div className="flex flex-col gap-1.5 text-xs text-[#625E56]">
             <span>#1716/135, East End "A" Main Road,</span>
             <span>Jayanagar 9th Block, Bangalore – 560 069</span>
             <span className="mt-1">Mon – Sat &nbsp;/&nbsp; 9:00 am – 7:00 pm</span>
@@ -74,7 +74,7 @@ export default function Footer() {
 
         {/* Quick Links */}
         <div>
-          <h3 className="mb-5 text-sm uppercase tracking-[0.28em] text-[#9B9890]">Quick Links</h3>
+          <h2 className="mb-5 text-sm uppercase tracking-[0.28em] text-[#625E56]">Quick Links</h2>
           <div className="flex flex-col gap-3">
             {navLinks.map((link) => (
               <Link key={link.href} href={link.href} className="transition hover:text-[#D4AF37]">
@@ -86,7 +86,7 @@ export default function Footer() {
 
         {/* Services */}
         <div>
-          <h3 className="mb-5 text-sm uppercase tracking-[0.28em] text-[#9B9890]">Services</h3>
+          <h2 className="mb-5 text-sm uppercase tracking-[0.28em] text-[#625E56]">Services</h2>
           <div className="flex flex-col gap-3">
             {services.map((s) => (
               <span key={s}>{s}</span>
@@ -96,12 +96,12 @@ export default function Footer() {
 
         {/* Contact */}
         <div>
-          <h3 className="mb-5 text-sm uppercase tracking-[0.28em] text-[#9B9890]">Contact</h3>
+          <h2 className="mb-5 text-sm uppercase tracking-[0.28em] text-[#625E56]">Contact</h2>
           <div className="flex flex-col gap-3">
             <p className="font-semibold text-[#1A1A18]">Abdul Rehaman</p>
             <a href="tel:+919945726707" className="transition hover:text-[#D4AF37]">+91 99457 26707</a>
             <a href="tel:08041711912" className="transition hover:text-[#D4AF37]">080-41711912</a>
-            <a href="mailto:Md@aristondevelopers.com" className="transition hover:text-[#D4AF37]">Md@aristondevelopers.com</a>
+            <a href="mailto:md@aristondevelopers.com" className="transition hover:text-[#D4AF37]">md@aristondevelopers.com</a>
             <a href="https://www.aristondevelopers.com" target="_blank" rel="noreferrer" className="transition hover:text-[#D4AF37]">www.aristondevelopers.com</a>
           </div>
 
@@ -110,7 +110,7 @@ export default function Footer() {
             href="https://wa.me/919945726707"
             target="_blank"
             rel="noreferrer"
-            className="mt-6 inline-flex items-center gap-2 rounded-full bg-[#25D366] px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-[#1ebe5d]"
+            className="mt-6 inline-flex items-center gap-2 rounded-full bg-[#1E7E44] px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-[#186A39]"
           >
             <FaWhatsapp size={18} />
             Chat on WhatsApp
@@ -119,9 +119,24 @@ export default function Footer() {
 
       </div>
 
-      <div className="mt-12 border-t border-black/[0.08] pt-8 text-center text-xs text-[#9B9890]">
+      <div className="mx-auto mt-12 flex max-w-7xl flex-col items-center gap-3 border-t border-black/[0.08] pt-8 text-center text-xs text-[#625E56] md:flex-row md:justify-between md:text-left">
         <p>© {new Date().getFullYear()} Ariston Developers. All rights reserved.</p>
-        <p className="mt-1.5">Developed by Naaz AI Labs</p>
+        <nav aria-label="Legal" className="flex items-center gap-4">
+          <Link href="/privacy-policy" className="transition hover:text-[#D4AF37]">Privacy Policy</Link>
+          <span aria-hidden="true">·</span>
+          <Link href="/terms-and-conditions" className="transition hover:text-[#D4AF37]">Terms &amp; Conditions</Link>
+        </nav>
+        <p>
+          Designed &amp; Developed by{' '}
+          <a
+            href="https://naazailabs.com"
+            target="_blank"
+            rel="noopener"
+            className="font-semibold text-[#6B6860] underline decoration-[#D4AF37]/60 underline-offset-4 transition hover:text-[#D4AF37]"
+          >
+            Naaz AI Labs
+          </a>
+        </p>
       </div>
     </footer>
   );

@@ -47,7 +47,7 @@ export default function ServiceTabs() {
                 : 'border-black/10 bg-[#FAF9F6] text-[#6B6860] hover:bg-[#F2EFE8]'
             }`}
           >
-            <span className="block text-sm uppercase tracking-[0.25em] text-[#9B9890]">{item.label}</span>
+            <span className="block text-sm uppercase tracking-[0.25em] text-[#625E56]">{item.label}</span>
             <span className="mt-3 block font-semibold text-xl text-[#1A1A18]">Explore</span>
           </button>
         ))}
@@ -63,7 +63,7 @@ export default function ServiceTabs() {
         <div className="grid gap-4">
           {tabItems[activeIndex].content.map((line) => (
             <div key={line} className="flex gap-4 rounded-3xl border border-black/[0.08] bg-white p-4">
-              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#D4AF37]/15 text-[#D4AF37]">✓</div>
+              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#D4AF37]/15 text-[#755A0E]">✓</div>
               <p className="text-sm leading-6 text-[#6B6860]">{line}</p>
             </div>
           ))}

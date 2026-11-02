@@ -25,13 +25,13 @@ export default function ContactClient() {
           aria-hidden="true"
         />
         <div className="relative mx-auto max-w-6xl text-center">
-          <span className="text-sm uppercase tracking-[0.35em] text-[#D4AF37]">Contact</span>
+          <span className="text-sm uppercase tracking-[0.35em] text-[#755A0E]">Contact</span>
           <h1 className="mt-3 text-3xl font-semibold leading-tight text-[#1A1A18] sm:mt-4 sm:text-5xl">Let&apos;s Find Your Perfect Property</h1>
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-[#6B6860]">
             Start your premium property journey with Ariston Developers — confidential advisory, concierge lead capture and immediate callback support.
           </p>
           <div className="mt-8 inline-flex items-center justify-center gap-3 rounded-full border border-black/10 bg-white/80 px-7 py-4 text-sm text-[#4A4A40] shadow-sm backdrop-blur-xl">
-            <span className="text-[#D4AF37]">Instant callback</span> +91 99457 26707
+            <span className="text-[#755A0E]">Instant callback</span> +91 99457 26707
           </div>
         </div>
       </section>
@@ -40,7 +40,7 @@ export default function ContactClient() {
         <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[0.95fr_0.9fr] lg:items-start">
           <div className="space-y-8">
             <div className="space-y-4">
-              <span className="text-sm uppercase tracking-[0.35em] text-[#D4AF37]">Lead Capture</span>
+              <span className="text-sm uppercase tracking-[0.35em] text-[#755A0E]">Lead Capture</span>
               <h2 className="text-3xl font-semibold tracking-tight text-[#1A1A18] sm:text-4xl md:text-5xl">Submit your inquiry for a premium property consultation.</h2>
               <p className="max-w-2xl text-lg leading-8 text-[#6B6860]">
                 Our team responds with tailored recommendations, luxury property previews and market analysis for your budget and goals.
@@ -50,7 +50,7 @@ export default function ContactClient() {
           </div>
           <div className="space-y-8">
             <div className="glass-card rounded-[32px] border border-black/[0.08] bg-white p-8 text-[#4A4A40] shadow-sm">
-              <p className="text-sm uppercase tracking-[0.35em] text-[#D4AF37]">Buy • Sell • Invest</p>
+              <p className="text-sm uppercase tracking-[0.35em] text-[#755A0E]">Buy • Sell • Invest</p>
               <p className="mt-4 text-lg leading-8 text-[#6B6860]">
                 Choose the service path that matches your property objective and receive expert support for every stage of the real estate lifecycle.
               </p>
@@ -64,7 +64,7 @@ export default function ContactClient() {
         <div className="mx-auto max-w-7xl">
           <div className="mb-12 grid gap-6 lg:grid-cols-[0.95fr_1.05fr] lg:items-end">
             <div className="space-y-4">
-              <span className="text-sm uppercase tracking-[0.35em] text-[#D4AF37]">Our Location</span>
+              <span className="text-sm uppercase tracking-[0.35em] text-[#755A0E]">Our Location</span>
               <h2 className="text-3xl font-semibold tracking-tight text-[#1A1A18] sm:text-4xl md:text-5xl">Visit Ariston Developers at our Jayanagar office.</h2>
             </div>
             <p className="max-w-2xl text-lg leading-8 text-[#6B6860]">
@@ -86,11 +86,11 @@ export default function ContactClient() {
             </div>
             <div className="space-y-6 rounded-[32px] border border-black/[0.08] bg-white p-8 shadow-sm">
               <div>
-                <p className="text-sm uppercase tracking-[0.35em] text-[#D4AF37]">Contact Information</p>
+                <p className="text-sm uppercase tracking-[0.35em] text-[#755A0E]">Contact Information</p>
                 <div className="mt-4 space-y-3 text-[#4A4A40]">
-                  <p>Mobile: <Link href="tel:+919945726707" className="text-[#D4AF37]">+91 99457 26707</Link></p>
-                  <p>Office: <Link href="tel:08041711912" className="text-[#D4AF37]">080-41711912</Link></p>
-                  <p>Email: <Link href="mailto:Md@aristondevelopers.com" className="text-[#D4AF37]">Md@aristondevelopers.com</Link></p>
+                  <p>Mobile: <Link href="tel:+919945726707" className="text-[#755A0E]">+91 99457 26707</Link></p>
+                  <p>Office: <Link href="tel:08041711912" className="text-[#755A0E]">080-41711912</Link></p>
+                  <p>Email: <Link href="mailto:md@aristondevelopers.com" className="text-[#755A0E]">md@aristondevelopers.com</Link></p>
                   <p>Address: #1716/135, East End &ldquo;A&rdquo; Main Road, Jayanagar 9th Block, Bangalore – 560 069</p>
                   <p>Hours: Mon – Sat / 9:00 am – 7:00 pm</p>
                 </div>

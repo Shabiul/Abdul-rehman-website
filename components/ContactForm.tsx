@@ -35,13 +35,17 @@ export default function ContactForm() {
       `Message: ${formState.message}`,
     ];
     const url = `https://wa.me/919945726707?text=${encodeURIComponent(lines.join('\n'))}`;
-    window.open(url, '_blank');
+    const chat = window.open(url, '_blank');
 
+    // Keep the entered details if the popup was blocked, so the lead isn't lost.
+    if (!chat) {
+      setStatus('error');
+      return;
+    }
     setStatus('success');
-    setFormState({ fullName: '', phone: '', email: '', interest: '', budget: '', purpose: 'Buy', message: '' });
   };
 
-  const inputClass = "rounded-3xl border border-black/10 bg-white px-4 py-3 text-[#1A1A18] outline-none transition focus:border-[#D4AF37] placeholder:text-[#ABABAA]";
+  const inputClass = "text-base sm:text-sm rounded-3xl border border-black/10 bg-white px-4 py-3 text-[#1A1A18] outline-none transition focus:border-[#D4AF37] placeholder:text-[#ABABAA]";
 
   return (
     <motion.form
@@ -62,15 +66,15 @@ export default function ContactForm() {
         </label>
         <label className="flex flex-col gap-2 text-sm text-[#4A4A40]">
           Email
-          <input required type="email" name="email" value={formState.email} onChange={handleChange} className={inputClass} placeholder="name@example.com" />
+          <input type="email" name="email" value={formState.email} onChange={handleChange} className={inputClass} placeholder="name@example.com" />
         </label>
         <label className="flex flex-col gap-2 text-sm text-[#4A4A40]">
           Property Interest
-          <input required name="interest" value={formState.interest} onChange={handleChange} className={inputClass} placeholder="Villas, Investments, Commercial" />
+          <input name="interest" value={formState.interest} onChange={handleChange} className={inputClass} placeholder="Villas, Investments, Commercial" />
         </label>
         <label className="flex flex-col gap-2 text-sm text-[#4A4A40]">
           Budget
-          <input required name="budget" value={formState.budget} onChange={handleChange} className={inputClass} placeholder="₹ 4 Cr - ₹ 20 Cr" />
+          <input name="budget" value={formState.budget} onChange={handleChange} className={inputClass} placeholder="₹ 4 Cr - ₹ 20 Cr" />
         </label>
         <label className="flex flex-col gap-2 text-sm text-[#4A4A40]">
           Buy / Sell / Invest
@@ -83,7 +87,7 @@ export default function ContactForm() {
       </div>
       <label className="mt-4 flex flex-col gap-2 text-sm text-[#4A4A40]">
         Message
-        <textarea required name="message" value={formState.message} onChange={handleChange} rows={5} className={inputClass} placeholder="Tell us about your ideal property or investment goal" />
+        <textarea name="message" value={formState.message} onChange={handleChange} rows={5} className={inputClass} placeholder="Tell us about your ideal property or investment goal" />
       </label>
       <div className="mt-6 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
         <button
@@ -92,11 +96,17 @@ export default function ContactForm() {
         >
           Send on WhatsApp
         </button>
-        <span className="text-xs uppercase tracking-[0.3em] text-[#9B9890]">Instant response via WhatsApp</span>
+        <span className="text-xs uppercase tracking-[0.3em] text-[#625E56]">Instant response via WhatsApp</span>
       </div>
       {status === 'success' && (
         <div className="mt-4 rounded-3xl border border-[#D4AF37]/40 bg-[#D4AF37]/10 p-4 text-sm text-[#7A6010]">
           Opening WhatsApp… please press send in the chat to reach our advisory team.
+        </div>
+      )}
+      {status === 'error' && (
+        <div className="mt-4 rounded-3xl border border-red-300 bg-red-50 p-4 text-sm text-red-800">
+          Your browser blocked WhatsApp from opening. Please allow pop-ups and try again, or call us on{' '}
+          <a href="tel:+919945726707" className="font-semibold underline">+91 99457 26707</a>.
         </div>
       )}
     </motion.form>
